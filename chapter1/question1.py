@@ -11,3 +11,10 @@ def unique_characters(input):
             seen_characters.append(letter)
 
     return True
+
+
+def unique_characters_without_struct(input):
+    for lead in input:
+        for follow in input:
+            if input[lead] == input[follow]:
+                return False
